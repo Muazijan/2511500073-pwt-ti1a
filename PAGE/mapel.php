@@ -16,7 +16,7 @@ if (isset($_GET['action'])) {
     if ($_GET['action'] == "hapus") {
         $kd = $_GET['kd'];
 
-        $query = mysqli_query($koneksi, "DELETE FROM mapel WHERE kd_mapel = '$kd'");
+        $query = mysqli_query($conn, "DELETE FROM mapel WHERE kd_mapel = '$kd'");
 
         if ($query) {
             echo '
@@ -24,7 +24,7 @@ if (isset($_GET['action'])) {
                 Berhasil Di Hapus
             </div>';
 
-            echo '<meta http-equiv="refresh" content="1;url=index.php?page=mapel">';
+            echo '<meta http-equiv="refresh" content="1;url=starter.php?page=mapel">';
         }
     }
 }
@@ -67,7 +67,7 @@ if (isset($_GET['action'])) {
             <td><?= $result['kkm']; ?></td>
             <td>
               
-              <a href="index.php?page=mapel&action=hapus&kd=<?= $result['kd_mapel']; ?>"
+              <a href="starter.php?page=mapel&action=hapus&kd=<?= $result['kd_mapel']; ?>"
                  onclick="return confirm('Yakin ingin menghapus data ini?')">
                 <span class="badge badge-danger">Hapus</span>
               </a>
