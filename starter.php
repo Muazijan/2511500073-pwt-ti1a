@@ -180,6 +180,13 @@ body {
 </li>
 
 <li class="nav-item">
+<a href="starter.php?page=skripsi" class="nav-link">
+<i class="nav-icon fas fa-calendar"></i>
+<p>skripsi</p>
+</a>
+</li>
+
+<li class="nav-item">
 <a href="logout.php" class="nav-link">
 <i class="nav-icon fas fa-sign-out-alt"></i>
 <p>Logout</p>
