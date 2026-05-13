@@ -180,8 +180,15 @@ body {
 </li>
 
 <li class="nav-item">
+<a href="starter.php?page=detail" class="nav-link">
+<i class="nav-icon fas fa-list"></i>
+<p>Detail Jadwal</p>
+</a>
+</li>
+
+<li class="nav-item">
 <a href="starter.php?page=skripsi" class="nav-link">
-<i class="nav-icon fas fa-calendar"></i>
+<i class="nav-icon fas fa-file-alt"></i>
 <p>skripsi</p>
 </a>
 </li>

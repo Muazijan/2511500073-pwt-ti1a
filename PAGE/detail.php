@@ -69,7 +69,7 @@ while ($result = mysqli_fetch_array($query)) {
   <td><?= $result['jam_mulai']; ?> - <?= $result['jam_selesai']; ?></td>
   <td>
 
-    <a href="starter.php?page=detail_jadwal&action=hapus&id=<?= $result['id_jadwal']; ?>"
+    <a href="starter.php?page=detail&action=hapus&id=<?= $result['id_jadwal']; ?>"
        onclick="return confirm('Yakin ingin hapus?')">
       <span class="badge badge-danger">Hapus</span>
     </a>
